@@ -18,12 +18,6 @@ This repository documents my learning journey through freeCodeCamp's **Front End
 - React Basics Review
 - Front-End Libraries Review
 
-## Current Progress
-
-- **Overall Curriculum:** 25 / 524 steps completed
-- **React Fundamentals:** 18 / 37 steps completed
-- **React State, Hooks, and Routing:** 2 / 113 steps completed
-
 ## Learning Goals
 
 - Build reusable and maintainable React components.
