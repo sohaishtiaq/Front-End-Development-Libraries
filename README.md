@@ -11,13 +11,6 @@ This repository documents my learning journey through freeCodeCamp's **Front End
 - **Testing**
 - **TypeScript Fundamentals**
 
-## Completed Work
-
-- Introduction to JavaScript Libraries and Frameworks — Theory
-- Build a Reusable Mega Navbar — Workshop
-- React Basics Review
-- Front-End Libraries Review
-
 ## Learning Goals
 
 - Build reusable and maintainable React components.
