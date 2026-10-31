@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flashcard App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>My Flashcards</h1>
+
+    <!-- Flashcard -->
+    <div id="flashcard" class="flashcard">
+      <div class="flashcard-inner">
+        <div class="flashcard-front">
+          <h2>Question</h2>
+          <p id="question-text"></p>
+        </div>
+
+        <div class="flashcard-back">
+          <h2>Answer</h2>
+          <p id="answer-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Button -->
+    <button type="button" id="delete-btn">
+      Delete Flashcard
+    </button>
+
+    <!-- Add New Flashcard Form -->
+    <form id="entry-form">
+      <h2>Add New Flashcard</h2>
+
+      <label for="front-text">Question</label>
+      <textarea
+        id="front-text"
+        placeholder="Enter your question..."
+        required
+      ></textarea>
+
+      <label for="back-text">Answer</label>
+      <textarea
+        id="back-text"
+        placeholder="Enter your answer..."
+        required
+      ></textarea>
+
+      <button type="submit">Add Flashcard</button>
+    </form>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
