@@ -1,59 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flashcard App</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <main class="container">
-    <h1>My Flashcards</h1>
-
-    <!-- Flashcard -->
-    <div id="flashcard" class="flashcard">
-      <div class="flashcard-inner">
-        <div class="flashcard-front">
-          <h2>Question</h2>
-          <p id="question-text"></p>
-        </div>
-
-        <div class="flashcard-back">
-          <h2>Answer</h2>
-          <p id="answer-text"></p>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Card Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="app-container">
+      <div class="flashcard-panel">
+        <div id="flashcard-body">
+          <h1>Flash Card Quiz App</h1>
+          <div class="flashcard-container">
+            <div id="flashcard" class="flashcard">
+              <div class="card-inner" id="current-card">
+                <div class="card-front"></div>
+                <div class="card-back"></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Delete Button -->
-    <button type="button" id="delete-btn">
-      Delete Flashcard
-    </button>
+      <div class="controls-panel">
+        <h2>Manage Cards</h2>
+        <div class="card-actions">
+          <button id="delete-btn" class="delete-btn">Delete</button>
+        </div>
 
-    <!-- Add New Flashcard Form -->
-    <form id="entry-form">
-      <h2>Add New Flashcard</h2>
+        <hr />
 
-      <label for="front-text">Question</label>
-      <textarea
-        id="front-text"
-        placeholder="Enter your question..."
-        required
-      ></textarea>
+        <h3>All Cards</h3>
+        <div id="cards-list"></div>
 
-      <label for="back-text">Answer</label>
-      <textarea
-        id="back-text"
-        placeholder="Enter your answer..."
-        required
-      ></textarea>
+        <hr />
 
-      <button type="submit">Add Flashcard</button>
-    </form>
+        <h3>Add a New Card</h3>
+        <form id="entry-form" class="entry-form">
+          <label for="front-text">Front:</label>
+          <textarea id="front-text"></textarea>
 
-  </main>
+          <label for="back-text">Back:</label>
+          <textarea id="back-text"></textarea>
 
-  <script src="index.js"></script>
-</body>
+          <p id="entry-error" class="error"></p>
+
+          <div class="button-group">
+            <button type="submit">Save new flash card</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script src="index.ts"></script>
+  </body>
 </html>
