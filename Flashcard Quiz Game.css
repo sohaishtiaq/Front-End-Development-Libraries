@@ -1,0 +1,11 @@
+#flashcard.flipped .flashcard-front {
+  display: none;
+}
+
+#flashcard.flipped .flashcard-back {
+  display: block;
+}
+
+.flashcard-back {
+  display: none;
+}
